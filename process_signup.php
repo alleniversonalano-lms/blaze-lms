@@ -17,7 +17,7 @@ function sendEmail($toEmail, $toName, $subject, $body)
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'no-reply@blaze-lms.com';
-        $mail->Password = 'Blazelms@2025';
+        $mail->Password = '******';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
@@ -141,3 +141,4 @@ HTML;
     header("Location: signup");
     exit;
 }
+

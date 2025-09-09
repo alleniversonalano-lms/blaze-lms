@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Manila');
 
 // Database credentials
 $host = 'localhost';
-$dbname = 'blazelms_db';
+$dbname = '****';
 $username = 'root';
 $password = ''; // (or your MySQL password)
 

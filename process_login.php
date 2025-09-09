@@ -17,7 +17,7 @@ function sendEmail($toEmail, $toName, $subject, $verification_link)
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'no-reply@blaze-lms.com';
-        $mail->Password = 'Blazelms@2025';
+        $mail->Password = '*****';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
@@ -164,3 +164,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 header("Location: login");
 exit;
+

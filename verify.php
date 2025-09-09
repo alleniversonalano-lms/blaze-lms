@@ -22,7 +22,7 @@ function sendVerificationEmail($email, $name, $token)
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'no-reply@blaze-lms.com';
-        $mail->Password = 'Blazelms@2025';
+        $mail->Password = '*****';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
@@ -126,3 +126,4 @@ if ($expiredResult->num_rows === 1) {
 // ❌ Token is invalid and does not exist
 header("Location: login?error=Invalid or expired verification token.");
 exit;
+

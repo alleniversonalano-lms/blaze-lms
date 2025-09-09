@@ -1,0 +1,31 @@
+{
+  "id": "0456dda9-507d-44bb-b6e4-c452c9af8bb1",
+  "title": "Untitled Quiz",
+  "description": "",
+  "type": "practice",
+  "options": {
+    "timeLimit": 60,
+    "attempts": "1",
+    "showOneQuestion": false,
+    "shuffleQuestions": false,
+    "shuffleAnswers": false,
+    "seeResponses": false,
+    "seeResponsesTiming": "once",
+    "seeCorrectAnswers": false,
+    "showCorrectAnswersDate": "",
+    "showCorrectAnswersTime": "",
+    "hideCorrectAnswersDate": "",
+    "hideCorrectAnswersTime": "",
+    "dueDate": "",
+    "dueTime": "",
+    "availableFromDate": "",
+    "availableFromTime": "",
+    "availableUntilDate": "",
+    "availableUntilTime": ""
+  },
+  "questions": [],
+  "courseId": 1,
+  "createdAt": null,
+  "lastModified": "2025-09-04T03:12:10.153Z",
+  "is_published": 0
+}

@@ -1,0 +1,42 @@
+{
+    "title": "Test nga natin",
+    "instructions": "",
+    "timeLimit": null,
+    "allowedAttempts": 1,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755583192576-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>asdsss<\/p>",
+            "points": 1,
+            "createdAt": 1755583192576,
+            "options": [
+                {
+                    "text": "ssxc",
+                    "is_correct": true
+                },
+                {
+                    "text": "zxczxc",
+                    "is_correct": false
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a412def0a586.68685249",
+        "course_id": 1,
+        "created": "2025-08-19 13:59:58",
+        "lastModified": "2025-08-19 13:59:58"
+    }
+}

@@ -1,0 +1,171 @@
+{
+    "title": "Beta Thesis Exam 2",
+    "instructions": "",
+    "timeLimit": 10,
+    "allowedAttempts": 2,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755500948958-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>Which of the following is NOT a passive component?<\/p>",
+            "points": 1,
+            "createdAt": 1755500948958,
+            "options": [
+                {
+                    "text": "Resistor",
+                    "is_correct": false
+                },
+                {
+                    "text": "Capacitor",
+                    "is_correct": false
+                },
+                {
+                    "text": "Inductor",
+                    "is_correct": false
+                },
+                {
+                    "text": "Transistor",
+                    "is_correct": true
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        },
+        {
+            "id": "q1755501309603-2",
+            "index": 2,
+            "type": "mcq",
+            "title": "",
+            "text": "<p><span data-huuid=\"12274547717047826504\">A series RLC circuit is at resonance.&nbsp;<\/span><span data-huuid=\"12274547717047824433\">What is the phase relationship between voltage and current?<\/span><\/p>",
+            "points": 1,
+            "createdAt": 1755501309603,
+            "options": [
+                {
+                    "text": "Voltage leads current",
+                    "is_correct": false
+                },
+                {
+                    "text": "Current leads voltage",
+                    "is_correct": false
+                },
+                {
+                    "text": "Voltage and current are in phase",
+                    "is_correct": true
+                },
+                {
+                    "text": "The phase relationship depends on the component values",
+                    "is_correct": false
+                }
+            ],
+            "allow_multiple": true,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        },
+        {
+            "id": "q1755501491971-3",
+            "index": 3,
+            "type": "fill",
+            "title": "",
+            "text": "<p>{Rectification} is the primary function of a diode<\/p>",
+            "points": 1,
+            "createdAt": 1755501491971,
+            "options": [],
+            "allow_multiple": false,
+            "blanks": [
+                {
+                    "index": 0,
+                    "answers": [
+                        "Rectification"
+                    ],
+                    "case_sensitive": false
+                }
+            ],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        },
+        {
+            "id": "q1755501525354-4",
+            "index": 4,
+            "type": "fill",
+            "title": "",
+            "text": "<p>{Rectification} is the primary function of a diode<\/p>",
+            "points": 1,
+            "createdAt": 1755501525354,
+            "options": [],
+            "allow_multiple": false,
+            "blanks": [
+                {
+                    "index": 0,
+                    "answers": [
+                        "Rectification"
+                    ],
+                    "case_sensitive": true
+                }
+            ],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        },
+        {
+            "id": "q1755501985401-5",
+            "index": 5,
+            "type": "formula",
+            "title": "",
+            "text": "<p>What is the sum value of [v] and [y]?<\/p>",
+            "points": 1,
+            "createdAt": 1755501985401,
+            "options": [],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [
+                {
+                    "name": "v",
+                    "min": 1,
+                    "max": 10,
+                    "step": 1,
+                    "decimals": 2,
+                    "sample": "5.50"
+                },
+                {
+                    "name": "y",
+                    "min": 1,
+                    "max": 10,
+                    "step": 1,
+                    "decimals": 2,
+                    "sample": "5.50"
+                }
+            ],
+            "formula": {
+                "expression": "v + y",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a2d5d4257c89.23001062",
+        "created": "2025-08-18 09:27:16",
+        "lastModified": "2025-08-18 09:27:16"
+    }
+}

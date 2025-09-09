@@ -1,0 +1,41 @@
+{
+    "title": "Beta Thesis Exam",
+    "instructions": "",
+    "timeLimit": 5,
+    "allowedAttempts": 2,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755500948958-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>asd<\/p>",
+            "points": 1,
+            "createdAt": 1755500948958,
+            "options": [
+                {
+                    "text": "yyy",
+                    "is_correct": true
+                },
+                {
+                    "text": "nnn",
+                    "is_correct": false
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a2d19dd9bd75.36586955",
+        "created": "2025-08-18 09:09:17",
+        "lastModified": "2025-08-18 09:09:17"
+    }
+}

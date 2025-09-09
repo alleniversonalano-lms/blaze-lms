@@ -1,0 +1,412 @@
+// Rich Text Editor Functions
+let activeEditor = null;
+
+function execCommand(command, value = null) {
+    if (!activeEditor) return;
+    activeEditor.focus();
+    document.execCommand('styleWithCSS', false, true);
+    document.execCommand(command, false, value);
+    updateToolbarState();
+}
+
+function updateToolbarState() {
+    if (!activeEditor) return;
+
+    const commands = ['bold', 'italic', 'underline', 'strikethrough', 'subscript', 'superscript'];
+    commands.forEach(cmd => {
+        const button = document.querySelector(`[onclick="execCommand('${cmd}')"]`);
+        if (button) {
+            button.classList.toggle('active', document.queryCommandState(cmd));
+        }
+    });
+}
+
+function setActiveEditor(editor) {
+    // Remove focus from previous editor
+    if (activeEditor && activeEditor !== editor) {
+        activeEditor.classList.remove('focused');
+    }
+
+    activeEditor = editor;
+    if (activeEditor) {
+        activeEditor.classList.add('focused');
+        updateToolbarState();
+    }
+}
+
+// Global state variables
+let questions = [];
+let questionCounter = 0;
+let expandedQuestion = null;
+let currentSelection = null;
+let selectedRange = null;
+let selectedRows = 0;
+let selectedCols = 0;
+
+// Show URL suggestions based on common patterns
+const urlSuggestions = [
+    {
+        name: "Google Search",
+        url: "https://www.google.com/search?q="
+    },
+    {
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v="
+    },
+    {
+        name: "Wikipedia",
+        url: "https://wikipedia.org/wiki/"
+    },
+    {
+        name: "Custom URL",
+        url: "http://"
+    }
+];
+
+function insertLink() {
+    const selection = window.getSelection();
+    const selectedText = selection.toString().trim();
+
+    let urlOptionsHtml = urlSuggestions.map((item, index) =>
+        `${index + 1}. ${item.name}`
+    ).join('\n');
+
+    // First, handle the text to be linked
+    let linkText = selectedText;
+    if (!linkText) {
+        linkText = prompt('Enter the text to be displayed for the link:');
+        if (!linkText) return; // User cancelled
+    }
+
+    // Then, handle the URL
+    const urlChoice = prompt(
+        `Select a URL type by entering a number, or enter a complete URL:\n\n${urlOptionsHtml}\n\nYour choice (1-${urlSuggestions.length}) or full URL:`,
+        selectedText ? 'http://' : '1'
+    );
+
+    if (!urlChoice) return; // User cancelled
+
+    let finalUrl = '';
+    if (!isNaN(urlChoice) && urlChoice > 0 && urlChoice <= urlSuggestions.length) {
+        // User selected a suggestion
+        const suggestion = urlSuggestions[parseInt(urlChoice) - 1];
+        if (suggestion.name === "Custom URL") {
+            finalUrl = prompt('Enter the complete URL:', 'http://');
+        } else {
+            const searchTerm = prompt(
+                `Enter the ${suggestion.name} search term or ID:`,
+                selectedText.replace(/\s+/g, suggestion.name === "Wikipedia" ? '_' : '+')
+            );
+            if (searchTerm) {
+                finalUrl = suggestion.url + encodeURIComponent(searchTerm);
+            }
+        }
+    } else {
+        // User entered a custom URL
+        finalUrl = urlChoice.startsWith('http') ? urlChoice : 'http://' + urlChoice;
+    }
+
+    if (finalUrl) {
+        // If there was a selection, preserve it
+        if (selectedText) {
+            const range = selection.getRangeAt(0);
+            const link = document.createElement('a');
+            link.href = finalUrl;
+            link.target = '_blank';
+            link.textContent = linkText;
+            range.deleteContents();
+            range.insertNode(link);
+        } else {
+            // Insert new link at cursor position
+            document.execCommand('insertHTML', false,
+                `<a href="${finalUrl}" target="_blank">${linkText}</a>`);
+        }
+    }
+}
+
+// Handle description image file selection
+function handleDescImageFileSelect() {
+    const imagePreview = document.getElementById('descImagePreview');
+    const imagePlaceholder = document.getElementById('descImagePlaceholder');
+
+    if (this.files && this.files[0]) {
+        const file = this.files[0];
+        if (!file.type.startsWith('image/')) {
+            alert('Please select an image file.');
+            this.value = '';
+            imagePreview.style.display = 'none';
+            imagePlaceholder.style.display = 'block';
+            return;
+        }
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+            imagePlaceholder.style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    } else {
+        imagePreview.style.display = 'none';
+        imagePlaceholder.style.display = 'block';
+    }
+}
+
+function insertImage() {
+    if (!activeEditor) return;
+
+    // Get modal elements
+    const modal = document.getElementById('imageModal');
+    const imageUrl = document.getElementById('imageUrl');
+    const imageFile = document.getElementById('imageFile');
+    const imagePreview = document.getElementById('imagePreview');
+    const imagePlaceholder = document.getElementById('imagePlaceholder');
+
+    // Clear previous inputs
+    imageUrl.value = '';
+    imageFile.value = '';
+
+    // Reset preview state
+    imagePreview.src = '';
+    imagePreview.style.display = 'none';
+    imagePlaceholder.style.display = 'block';
+
+    // Show modal
+    modal.style.display = 'block';
+
+    // Set up file input change handler
+    imageFile.onchange = handleImageFileSelect;
+}
+
+function closeImageModal() {
+    // Get modal elements
+    const modal = document.getElementById('imageModal');
+    const imageUrl = document.getElementById('imageUrl');
+    const imageFile = document.getElementById('imageFile');
+    const imagePreview = document.getElementById('imagePreview');
+    const imagePlaceholder = document.getElementById('imagePlaceholder');
+
+    // Clear all inputs
+    imageUrl.value = '';
+    imageFile.value = '';
+
+    // Reset preview
+    imagePreview.src = '';
+    imagePreview.style.display = 'none';
+    imagePlaceholder.style.display = 'block';
+
+    // Hide modal
+    modal.style.display = 'none';
+}
+
+function confirmImage() {
+    if (!activeEditor) return;
+
+    const urlInput = document.getElementById('imageUrl');
+    const fileInput = document.getElementById('imageFile');
+
+    let imageUrl = '';
+
+    if (urlInput.value.trim()) {
+        // Use URL input
+        imageUrl = urlInput.value.trim();
+    } else if (fileInput.files && fileInput.files[0]) {
+        // Use uploaded file
+        imageUrl = document.getElementById('imagePreview').src;
+    } else {
+        alert('Please provide an image URL or upload a file.');
+        return;
+    }
+
+    activeEditor.focus();
+    document.execCommand('insertImage', false, imageUrl);
+    closeImageModal();
+}
+
+function insertTable() {
+    if (!activeEditor) return;
+
+    // Show the modal
+    const modal = document.getElementById('tableModal');
+    modal.style.display = 'block';
+
+    // Initialize the grid
+    const gridContainer = document.querySelector('.grid-container');
+    gridContainer.innerHTML = '';
+
+    // Create 10x10 grid
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10; j++) {
+            const cell = document.createElement('div');
+            cell.className = 'grid-cell';
+            cell.dataset.row = i;
+            cell.dataset.col = j;
+            cell.addEventListener('mouseover', highlightCells);
+            cell.addEventListener('click', selectTableSize);
+            gridContainer.appendChild(cell);
+        }
+    }
+
+    // Reset selection
+    selectedRows = 0;
+    selectedCols = 0;
+    document.getElementById('gridSize').textContent = '0 × 0';
+}
+
+function highlightCells(e) {
+    const row = parseInt(e.target.dataset.row);
+    const col = parseInt(e.target.dataset.col);
+
+    document.querySelectorAll('.grid-cell').forEach(cell => {
+        const cellRow = parseInt(cell.dataset.row);
+        const cellCol = parseInt(cell.dataset.col);
+
+        if (cellRow <= row && cellCol <= col) {
+            cell.classList.add('active');
+        } else {
+            cell.classList.remove('active');
+        }
+    });
+
+    document.getElementById('gridSize').textContent = `${row + 1} × ${col + 1}`;
+}
+
+function selectTableSize(e) {
+    selectedRows = parseInt(e.target.dataset.row) + 1;
+    selectedCols = parseInt(e.target.dataset.col) + 1;
+    // Immediately confirm the selection when clicking
+    confirmTable();
+}
+
+function closeTableModal() {
+    const modal = document.getElementById('tableModal');
+    modal.style.display = 'none';
+    selectedRows = 0;
+    selectedCols = 0;
+}
+
+function confirmTable() {
+    if (!activeEditor || selectedRows === 0 || selectedCols === 0) return;
+
+    const bordered = document.getElementById('tableBordered').checked;
+    const striped = document.getElementById('tableStriped').checked;
+
+    // Create table with responsive styles
+    let html = '<div style="max-width: 100%; overflow-x: auto; margin: 8px 0;">';
+    html += '<table style="border-collapse: collapse; min-width: 50%; max-width: 100%;' +
+        (bordered ? ' border: 1px solid #dee2e6;' : '') + '">';
+
+    for (let i = 0; i < selectedRows; i++) {
+        html += '<tr' + (striped && i % 2 === 1 ? ' style="background-color: #f8f9fa;"' : '') + '>';
+        for (let j = 0; j < selectedCols; j++) {
+            // Calculate a reasonable minimum width based on column count
+            const minWidth = Math.max(50, Math.min(120, Math.floor(600 / selectedCols)));
+            html += '<td style="padding: 8px; min-width: ' + minWidth + 'px;' +
+                (bordered ? ' border: 1px solid #dee2e6;' : '') +
+                '">&nbsp;</td>';
+        }
+        html += '</tr>';
+    }
+    html += '</table>';
+    html += '</div>';
+
+    activeEditor.focus();
+    document.execCommand('insertHTML', false, html);
+    closeTableModal();
+}
+
+function showSymbolPicker() {
+    const picker = document.getElementById('symbolPicker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+}
+
+function insertSymbol(symbol) {
+    document.execCommand('insertText', false, symbol);
+    document.getElementById('symbolPicker').style.display = 'none';
+}
+
+function insertBlank(editorId) {
+    const editor = document.getElementById(`editor_${editorId}`);
+    if (editor) {
+        editor.focus();
+        document.execCommand('insertText', false, '_');
+        // Trigger the blur event to update the preview
+        editor.dispatchEvent(new Event('blur'));
+    }
+}
+
+// Event Listeners
+document.addEventListener('click', function(e) {
+    const picker = document.getElementById('symbolPicker');
+    const symbolBtn = document.querySelector('[title="Insert Symbol"]');
+    if (picker && !picker.contains(e.target) && e.target !== symbolBtn) {
+        picker.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Force styleWithCSS for the entire document
+    document.execCommand('styleWithCSS', false, true);
+
+    // Initialize all editors
+    document.querySelectorAll('.rich-editor-content').forEach(editor => {
+        // Force styleWithCSS for each editor
+        editor.addEventListener('focus', function() {
+            document.execCommand('styleWithCSS', false, true);
+            setActiveEditor(this);
+        });
+
+        editor.addEventListener('blur', function() {
+            updateToolbarState();
+        });
+
+        // Content change handling
+        editor.addEventListener('keyup', updateToolbarState);
+        editor.addEventListener('mouseup', updateToolbarState);
+        editor.addEventListener('input', updateToolbarState);
+
+        // Click handling for empty editor
+        editor.addEventListener('click', function(e) {
+            if (!this.innerHTML.trim()) {
+                this.focus();
+            }
+        });
+
+        // Paste handling
+        editor.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const text = e.clipboardData.getData('text/plain');
+            document.execCommand('insertText', false, text);
+        });
+    });
+
+    // Handle clicks on the editor container
+    document.querySelectorAll('.rich-editor').forEach(container => {
+        container.addEventListener('click', function(e) {
+            if (e.target === this) {
+                const editor = this.querySelector('.rich-editor-content');
+                if (editor) {
+                    editor.focus();
+                }
+            }
+        });
+    });
+
+    // Handle toolbar button states
+    document.querySelectorAll('.toolbar-btn').forEach(button => {
+        button.addEventListener('mousedown', function(e) {
+            e.preventDefault(); // Prevent losing focus from editor
+        });
+    });
+});
+
+// Ensure dropdown closes when clicking elsewhere
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('questionTypeDropdown');
+    const btn = document.getElementById('floatingNewQuestionBtn');
+    if (!dropdown.contains(event.target) && event.target !== btn) {
+        dropdown.classList.remove('show');
+        dropdown.style.position = '';
+        dropdown.style.right = '';
+        dropdown.style.bottom = '';
+    }
+});

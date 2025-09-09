@@ -1,0 +1,42 @@
+{
+    "title": "asd",
+    "instructions": "",
+    "timeLimit": null,
+    "allowedAttempts": 1,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755583052231-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>asd<\/p>",
+            "points": 1,
+            "createdAt": 1755583052231,
+            "options": [
+                {
+                    "text": "xzxx",
+                    "is_correct": true
+                },
+                {
+                    "text": "asds",
+                    "is_correct": false
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a412516e6146.43829731",
+        "course_id": 1,
+        "created": "2025-08-19 13:57:37",
+        "lastModified": "2025-08-19 13:57:37"
+    }
+}

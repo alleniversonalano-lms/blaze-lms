@@ -1,0 +1,14 @@
+{
+    "title": "Third",
+    "instructions": "",
+    "timeLimit": 30,
+    "allowedAttempts": 1,
+    "scoreToKeep": "highest",
+    "questions": [],
+    "metadata": {
+        "id": "quiz_68a40e6f2700d9.25856801",
+        "course_id": 1,
+        "created": "2025-08-19 13:41:03",
+        "lastModified": "2025-08-19 13:41:03"
+    }
+}

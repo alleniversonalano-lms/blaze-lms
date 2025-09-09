@@ -1,0 +1,685 @@
+<?php
+session_start();
+
+// Store session details into variables
+$user_id = $_SESSION['user_id'];
+$username = $_SESSION['username'];
+$first_name = $_SESSION['first_name'];
+$last_name = $_SESSION['last_name'];
+$email_address = $_SESSION['email_address'];
+$role = $_SESSION['role'];
+$profile_pic = $_SESSION['profile_pic'];
+
+// Redirect if not logged in or not a teacher
+if (!isset($_SESSION['user_id']) || strtolower($_SESSION['role']) !== 'teacher') {
+    header("Location: /login?error=Access+denied");
+    exit;
+}
+
+
+// Get unread message count
+require_once $_SERVER['DOCUMENT_ROOT'] . '/connect/db.php';
+
+// Debug connection
+if ($conn->connect_error) {
+    error_log("Connection failed: " . $conn->connect_error);
+}
+
+try {
+    // Check if messages table exists
+    $table_check = $conn->query("SHOW TABLES LIKE 'messages'");
+    if ($table_check->num_rows == 0) {
+        error_log("Messages table does not exist");
+        $unread_count = 0;
+    } else {
+        $unread_query = "SELECT COUNT(*) as unread_count FROM messages WHERE receiver_id = ? AND is_read = 0";
+        $stmt = $conn->prepare($unread_query);
+        if (!$stmt) {
+            error_log("Prepare failed: " . $conn->error);
+            $unread_count = 0;
+        } else {
+            $stmt->bind_param("i", $user_id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $row = $result->fetch_assoc();
+            $unread_count = $row['unread_count'];
+            error_log("User ID: " . $user_id . " | Unread count: " . $unread_count);
+        }
+    }
+} catch (Exception $e) {
+    error_log("Error getting unread count: " . $e->getMessage());
+    $unread_count = 0;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: #B71C1C;
+            color: white;
+            width: 240px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            padding: 120px 20px 20px;
+            /* extra top padding to clear the logo */
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            z-index: 10;
+            text-align: center;
+            user-select: none;
+            /* Prevent text/image selection */
+            pointer-events: none;
+            /* Optional: ignore pointer events like drag */
+        }
+
+        .logo img {
+            width: 100%;
+            max-height: 150px;
+            height: auto;
+            /* For Safari */
+            user-select: none;
+            /* For other browsers */
+            -webkit-user-drag: none;
+            /* For Safari */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+            /* Prevent dragging */
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+.unread-count {
+            background-color: #fff;
+            color: #B71C1C;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            background-color: rgba(254, 80, 80, 0.73);
+        }
+
+        .main-content {
+            margin-left: 240px;
+            padding: 40px;
+            flex-grow: 1;
+            background: #f5f5f5;
+            overflow-y: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-content::before {
+            content: "BLAZE";
+            position: fixed;
+            top: 40%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            font-size: 12rem;
+            font-weight: 900;
+            color: rgb(60, 60, 60);
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .main-content::after {
+            content: "BatStateU Learning and Academic Zone for Excellence";
+            position: fixed;
+            top: 58%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: rgb(60, 60, 60);
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .main-content {
+                margin-left: 200px;
+                padding: 20px;
+            }
+
+            .main-content::before {
+                font-size: 8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                position: absolute;
+                z-index: 10;
+                height: 100%;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .main-content::before {
+                font-size: 5rem;
+            }
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .card-header h3 {
+            margin-bottom: 6px;
+            font-size: 1.25rem;
+            color: #B71C1C;
+        }
+
+        .card-header h4 {
+            margin-bottom: 6px;
+            font-size: 1.10rem;
+            color: #B71C1C;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .menu-container {
+            position: relative;
+        }
+
+        .menu-button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            right: 0;
+            top: 24px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: none;
+            flex-direction: column;
+            min-width: 120px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 14px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            color: #333;
+            transition: background 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f5f5f5;
+        }
+
+        .menu-container .dropdown-menu {
+            display: none;
+        }
+
+        .menu-container.show .dropdown-menu {
+            display: flex;
+        }
+
+
+        .card-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .view-btn {
+            background: #B71C1C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: #a01515;
+        }
+
+        .view-button {
+            margin-bottom: 10px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            backdrop-filter: blur(2px);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+        .nav-button {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 24px;
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .profile-avatar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .avatar-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #b71c1c;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .avatar-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .avatar-hint {
+            display: block;
+            margin-top: 8px;
+            color: #777;
+            font-size: 0.85rem;
+        }
+
+
+        .profile-info {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .profile-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .profile-info .label {
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            color: #444;
+        }
+
+        .profile-info input[type="text"],
+        .profile-info input[type="email"],
+        .profile-info input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+            transition: border-color 0.3s;
+        }
+
+        .profile-info input:focus {
+            border-color: #b71c1c;
+            outline: none;
+        }
+
+        .profile-info .role,
+        .profile-info .username,
+        .profile-info .email {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            margin-top: 16px;
+            text-align: right;
+        }
+
+
+        .edit-btn {
+            background-color: #b71c1c;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+            display: block;
+            margin-left: auto;
+            /* Push to the right */
+            margin-top: 16px;
+            /* Optional: adds spacing from the info above */
+        }
+
+        .edit-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 280px;
+            max-width: 90%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 14px 20px;
+            position: fixed;
+            z-index: 9999;
+            right: 30px;
+            /* Position it from the right */
+            bottom: 30px;
+            /* Keep it at the bottom */
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        #snackbar.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/img/left-logo.png" alt="BLAZE Logo">
+        </div>
+
+        <div class="nav">
+            <a href="dashboard">Dashboard</a>
+            <a href="unpublished">Unpublished</a>
+            <a href="collaboration">Collaboration</a>
+            <a href="msg" target="_blank">Chat <?php if ($unread_count > 0): ?><span class="unread-count"><?= $unread_count ?></span><?php endif; ?></a>
+            <a href="profile">Profile</a>
+            <a href="logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h2>Edit Profile</h2>
+        <br>
+
+        <!-- Snackbar Container -->
+        <div id="snackbar">This is a sample snackbar message.</div>
+
+        <!-- Profile Card -->
+        <!-- Edit Profile Form Card -->
+        <div class="profile-card">
+            <form id="editProfileForm" action="functions/update-profile" method="POST" enctype="multipart/form-data" style="width:100%">
+                <!-- Max file size (optional) -->
+                <input type="hidden" name="MAX_FILE_SIZE" value="5242880"> <!-- 5MB -->
+
+                <div class="profile-avatar">
+                    <label for="profile_pic" class="avatar-label">
+                        <img src="/uploads/profile_pics/<?= htmlspecialchars($profile_pic ?? 'default.png') ?>"
+                            alt="Profile Avatar"
+                            title="Click to change profile picture"
+                            class="avatar-img">
+                    </label>
+                    <input type="file" name="profile_pic" id="profile_pic" accept="image/*" style="display: none;">
+                    <small class="avatar-hint">Click the avatar to upload a new profile picture</small>
+                </div>
+
+                <div class="profile-info">
+                    <label class="label" for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name"
+                        value="<?= htmlspecialchars($first_name) ?>" required>
+
+                    <label class="label" for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name"
+                        value="<?= htmlspecialchars($last_name) ?>" required>
+
+                    <label class="label" for="username">Username</label>
+                    <input type="text" id="username" name="username"
+                        value="<?= htmlspecialchars($username) ?>" required
+                        pattern="^[a-zA-Z0-9._]+$"
+                        title="Only letters, numbers, periods (.) and underscores (_) are allowed">
+
+                    <label class="label" for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        value="<?= htmlspecialchars($email_address) ?>" required>
+
+                    <label class="label" for="current_password">Current Password <span style="color:red;">*</span></label>
+                    <input type="password" id="current_password" name="current_password"
+                        placeholder="Enter current password" required>
+
+                    <label class="label" for="new_password">New Password (optional)</label>
+                    <input type="password" id="new_password" name="new_password"
+                        placeholder="Enter new password">
+
+                    <label class="label" for="confirm_password">Confirm New Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password"
+                        placeholder="Confirm new password">
+
+                    <div class="card-footer">
+                        <button type="submit" class="view-btn">Update Profile</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuContainers = document.querySelectorAll('.menu-container');
+
+            menuContainers.forEach(container => {
+                const button = container.querySelector('.menu-button');
+
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation(); // prevent the click from bubbling to document
+                    // Close any other open menus
+                    document.querySelectorAll('.menu-container').forEach(c => {
+                        if (c !== container) c.classList.remove('show');
+                    });
+                    // Toggle current
+                    container.classList.toggle('show');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', () => {
+                document.querySelectorAll('.menu-container').forEach(container => {
+                    container.classList.remove('show');
+                });
+            });
+        });
+    </script>
+    <script>
+        function showSnackbar(message = 'This is a sample snackbar message.', duration = 3000) {
+            const snackbar = document.getElementById('snackbar');
+            snackbar.textContent = message;
+            snackbar.classList.add('show');
+
+            setTimeout(() => {
+                snackbar.classList.remove('show');
+            }, duration);
+        }
+
+        // Check for error messages in the URL
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has("error")) {
+                const error = decodeURIComponent(params.get("error"));
+                showSnackbar(error);
+
+                // Remove error from URL without reloading
+                const url = new URL(window.location);
+                url.searchParams.delete('error');
+                window.history.replaceState({}, document.title, url.pathname);
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('profile_pic').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.querySelector('.profile-avatar img').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

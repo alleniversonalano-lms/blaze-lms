@@ -1,0 +1,164 @@
+{
+    "categories": [
+        {
+            "id": "cat_1756844992228",
+            "name": "asd",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756865950197",
+            "name": "sd",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756865957581",
+            "name": "xza",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756870874360",
+            "name": "dsz",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756870698638",
+            "name": "betaaa",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756870667894",
+            "name": "ss",
+            "courseId": "1"
+        },
+        {
+            "id": "cat_1756955670003",
+            "name": "aszz",
+            "courseId": "1"
+        }
+    ],
+    "questions": [
+        {
+            "id": "question_1756864701760_48qhyf8",
+            "type": "multiple_choice",
+            "title": "asd",
+            "content": "asd",
+            "points": 1,
+            "choices": [
+                "asdxx",
+                "xxx",
+                "ccc",
+                "www"
+            ],
+            "correctAnswers": [
+                0
+            ],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": "8",
+            "ilo_number": "3",
+            "ilo_description": "Test, testing - working",
+            "savedDate": "2025-09-03T01:58:21.760Z",
+            "courseId": "1",
+            "savedBy": {
+                "userId": "1",
+                "name": "Allen Alano"
+            },
+            "categoryId": "cat_1756955670003"
+        },
+        {
+            "id": "question_3",
+            "type": "multiple_choice",
+            "title": "Edit",
+            "content": "asd",
+            "points": 1,
+            "choices": [
+                "asd",
+                "asdxx",
+                "xx",
+                "cc"
+            ],
+            "correctAnswers": [
+                0,
+                1
+            ],
+            "isMultipleAnswer": true,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "savedDate": "2025-09-03T02:12:55.926Z",
+            "courseId": "1",
+            "savedBy": {
+                "userId": "1",
+                "name": "Allen Alano"
+            },
+            "categoryId": "cat_1756844992228"
+        },
+        {
+            "id": "question_4",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "animal",
+                    ""
+                ],
+                [
+                    "baka"
+                ]
+            ],
+            "blankText": "When _ the _",
+            "caseSensitive": [
+                null,
+                [
+                    true
+                ]
+            ],
+            "savedDate": "2025-09-03T02:23:22.702Z",
+            "courseId": "1",
+            "savedBy": {
+                "userId": "1",
+                "name": "Allen Alano"
+            },
+            "categoryId": "cat_1756870874360"
+        },
+        {
+            "id": "question_1",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "xxxc",
+            "points": 1,
+            "choices": [
+                "cc",
+                "c",
+                "ccc",
+                "ccccc"
+            ],
+            "correctAnswers": [
+                0
+            ],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "savedDate": "2025-09-04T03:38:31.242Z",
+            "courseId": "1",
+            "savedBy": {
+                "userId": "1",
+                "name": "Allen Alano"
+            },
+            "categoryId": "uncategorized"
+        }
+    ]
+}

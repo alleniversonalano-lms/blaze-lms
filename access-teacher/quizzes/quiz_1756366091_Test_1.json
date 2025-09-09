@@ -1,0 +1,31 @@
+{
+    "id": "a2fa51da-05c9-40a3-92ae-7ad50898f7a6",
+    "title": "Test 1",
+    "description": "",
+    "type": "graded",
+    "options": {
+        "timeLimit": 60,
+        "attempts": "1",
+        "showOneQuestion": false,
+        "shuffleQuestions": false,
+        "shuffleAnswers": false,
+        "seeResponses": false,
+        "seeResponsesTiming": "once",
+        "seeCorrectAnswers": false,
+        "showCorrectAnswersDate": "",
+        "showCorrectAnswersTime": "",
+        "hideCorrectAnswersDate": "",
+        "hideCorrectAnswersTime": "",
+        "dueDate": "",
+        "dueTime": "",
+        "availableFromDate": "",
+        "availableFromTime": "",
+        "availableUntilDate": "",
+        "availableUntilTime": ""
+    },
+    "questions": [],
+    "courseId": 1,
+    "createdAt": null,
+    "lastModified": "2025-08-28T07:28:11.261Z",
+    "is_published": 1
+}

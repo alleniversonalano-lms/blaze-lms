@@ -1,0 +1,41 @@
+{
+    "title": "Beta Test",
+    "instructions": "",
+    "timeLimit": null,
+    "allowedAttempts": 1,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755578352778-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>asd<\/p>",
+            "points": 1,
+            "createdAt": 1755578352778,
+            "options": [
+                {
+                    "text": "sss",
+                    "is_correct": true
+                },
+                {
+                    "text": "zzz",
+                    "is_correct": false
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a3fff6a01318.42954966",
+        "created": "2025-08-19 06:39:18",
+        "lastModified": "2025-08-19 06:39:18"
+    }
+}

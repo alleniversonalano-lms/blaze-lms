@@ -1,0 +1,68 @@
+{
+    "title": "Midterm Testing",
+    "instructions": "",
+    "timeLimit": 20,
+    "allowedAttempts": 1,
+    "scoreToKeep": "highest",
+    "questions": [
+        {
+            "id": "q1755582773337-1",
+            "index": 1,
+            "type": "mcq",
+            "title": "",
+            "text": "<p>Graduate na ba<\/p>",
+            "points": 1,
+            "createdAt": 1755582773337,
+            "options": [
+                {
+                    "text": "Yes",
+                    "is_correct": false
+                },
+                {
+                    "text": "Yes na yes",
+                    "is_correct": true
+                }
+            ],
+            "allow_multiple": false,
+            "blanks": [],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        },
+        {
+            "id": "q1755582786035-2",
+            "index": 2,
+            "type": "fill",
+            "title": "",
+            "text": "<p>Kami ay {graduate}<\/p>",
+            "points": 1,
+            "createdAt": 1755582786035,
+            "options": [],
+            "allow_multiple": false,
+            "blanks": [
+                {
+                    "index": 0,
+                    "answers": [
+                        "graduate"
+                    ],
+                    "case_sensitive": false
+                }
+            ],
+            "variables": [],
+            "formula": {
+                "expression": "",
+                "decimals": 2
+            },
+            "sample_output": ""
+        }
+    ],
+    "metadata": {
+        "id": "quiz_68a41153e3c2c7.71771934",
+        "course_id": 1,
+        "created": "2025-08-19 13:53:23",
+        "lastModified": "2025-08-19 13:53:23"
+    }
+}

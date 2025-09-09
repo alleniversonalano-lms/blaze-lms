@@ -1,0 +1,717 @@
+[2025-08-27 16:12:47] Save quiz request received
+[2025-08-27 16:12:47] Received data: {
+  "title": "Untitled Quiz",
+  "description": "",
+  "options": {
+    "timeLimit": 60,
+    "attempts...
+[2025-08-27 23:54:30] Save quiz request received
+[2025-08-27 23:54:30] Received data: {
+  "title": "asd",
+  "description": "asd",
+  "options": {
+    "timeLimit": 60,
+    "attempts": "1",...
+[2025-08-28 08:36:22] Save quiz request received
+[2025-08-28 08:36:22] Received data: {
+  "title": "Untitled Quiz",
+  "description": "",
+  "options": {
+    "timeLimit": 60,
+    "attempts...
+[2025-08-28 08:48:00] Save quiz request received
+[2025-08-28 08:48:00] Received data: {
+  "title": "Beta",
+  "description": "",
+  "options": {
+    "timeLimit": 60,
+    "attempts": "1",
+ ...
+[2025-08-28 08:50:55] Save quiz request received
+[2025-08-28 08:50:55] Received data: {
+  "title": "Beta",
+  "description": "",
+  "options": {
+    "timeLimit": 60,
+    "attempts": "1",
+ ...
+[2025-08-28 09:02:55] Save quiz request received
+[2025-08-28 09:02:55] Received data: {
+  "title": "Alpha",
+  "description": "testing",
+  "type": "practice",
+  "options": {
+    "timeLimi...
+[2025-08-28 09:03:03] Save quiz request received
+[2025-08-28 09:03:03] Received data: {
+  "title": "Untitled Quiz",
+  "description": "",
+  "type": "graded",
+  "options": {
+    "timeLimit...
+[2025-08-28 09:05:54] Save quiz request received
+[2025-08-28 09:05:54] Received data: {
+  "id": "845690e1-acdc-4668-a2de-47275ef2234a",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 09:09:06] Save quiz request received
+[2025-08-28 09:09:06] Received data: {
+  "id": "52199bda-99b1-4589-9338-4867536eb580",
+  "title": "Beta",
+  "description": "",
+  "type": ...
+[2025-08-28 09:09:15] Save quiz request received
+[2025-08-28 09:09:15] Received data: {
+  "id": "50b6c41d-8831-498b-8933-b383eadd6888",
+  "title": "Alpha",
+  "description": "",
+  "type":...
+[2025-08-28 09:09:30] Save quiz request received
+[2025-08-28 09:09:30] Received data: {
+  "id": "91387e56-221b-41aa-bf90-aa833231a762",
+  "title": "Test 2",
+  "description": "",
+  "type"...
+[2025-08-28 09:09:41] Save quiz request received
+[2025-08-28 09:09:41] Received data: {
+  "id": "c4e5f740-9260-42b2-9d71-99c6a7dd5160",
+  "title": "Test 2",
+  "description": "",
+  "type"...
+[2025-08-28 09:14:11] Save quiz request received
+[2025-08-28 09:14:11] Received data: {
+  "id": "f483e461-6bd3-43e0-bdc7-74752f499cb7",
+  "title": "Hehe",
+  "description": "",
+  "type": ...
+[2025-08-28 09:16:49] Save quiz request received
+[2025-08-28 09:16:49] Received data: {
+  "id": "97b8d76f-e86d-4c1b-bddb-42b362948c49",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 09:28:11] Save quiz request received
+[2025-08-28 09:28:11] Received data: {
+  "id": "a2fa51da-05c9-40a3-92ae-7ad50898f7a6",
+  "title": "Test 1",
+  "description": "",
+  "type"...
+[2025-08-28 10:33:15] Save quiz request received
+[2025-08-28 10:33:15] Received data: {
+  "id": "770e3619-18e6-4f11-9bff-e2c72370b05f",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 10:33:43] Save quiz request received
+[2025-08-28 10:33:43] Received data: {
+  "id": "8e0c6d29-4bee-4c25-99c7-9adc68dc49a4",
+  "title": "Beta",
+  "description": "",
+  "type": ...
+[2025-08-28 10:34:44] Save quiz request received
+[2025-08-28 10:34:44] Received data: {
+  "id": "8e0c6d29-4bee-4c25-99c7-9adc68dc49a4",
+  "title": "Beta",
+  "description": "",
+  "type": ...
+[2025-08-28 10:48:58] Save quiz request received
+[2025-08-28 10:48:58] Received data: {
+  "id": "7226d0fe-bac6-4347-880c-986e97658f6f",
+  "title": "Testing",
+  "description": "",
+  "type...
+[2025-08-28 10:49:43] Save quiz request received
+[2025-08-28 10:49:43] Received data: {
+  "id": "47fdcefe-4321-4521-ab0f-a6f6a2d941e8",
+  "title": "Beta",
+  "description": "",
+  "type": ...
+[2025-08-28 11:47:19] Save quiz request received
+[2025-08-28 11:47:19] Received data: {
+  "id": "a4944a34-7e07-457a-8caf-852ea43cd7db",
+  "title": "Alpha Test",
+  "description": "",
+  "t...
+[2025-08-28 11:47:22] Save quiz request received
+[2025-08-28 11:47:22] Received data: {
+  "id": "a4944a34-7e07-457a-8caf-852ea43cd7db",
+  "title": "Alpha Tests",
+  "description": "",
+  "...
+[2025-08-28 11:47:48] Save quiz request received
+[2025-08-28 11:47:48] Received data: {
+  "id": "0088517d-bfbd-4db9-90e9-7d383ab27e54",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 11:48:01] Save quiz request received
+[2025-08-28 11:48:01] Received data: {
+  "id": "ba5d898f-94f6-4a55-b3f6-f1dba7832819",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 11:51:19] Save quiz request received
+[2025-08-28 11:51:19] Received data: {
+  "id": "1b487dc8-8cb1-4067-a7a4-95fa2709f4d0",
+  "title": "testing",
+  "description": "",
+  "type...
+[2025-08-28 12:25:39] Save quiz request received
+[2025-08-28 12:25:39] Received data: {
+  "id": "72e64419-4299-40a4-bd65-ba73a08b5fd9",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:25:49] Save quiz request received
+[2025-08-28 18:25:49] Received data: {
+  "id": "6463446d-6057-4e9b-8bf5-6e23e1c3748e",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:26:00] Save quiz request received
+[2025-08-28 18:26:00] Received data: {
+  "id": "cfaba697-dea7-4214-8476-287509dc8dc3",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:26:14] Save quiz request received
+[2025-08-28 12:26:14] Received data: {
+  "id": "16d7ff33-3626-4c3e-951d-9c0a5fb74210",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:26:35] Save quiz request received
+[2025-08-28 12:26:35] Received data: {
+  "id": "8c828572-d07f-4c3e-adab-d97ae8dbd370",
+  "title": "asdz",
+  "description": "",
+  "type": ...
+[2025-08-28 12:26:42] Save quiz request received
+[2025-08-28 12:26:42] Received data: {
+  "id": "5c946a87-0afc-4ab3-89f2-5e051557ade5",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 12:27:18] Save quiz request received
+[2025-08-28 12:27:18] Received data: {
+  "id": "778de69d-a81a-40ab-af46-01fdbc2276ab",
+  "title": "xxx",
+  "description": "",
+  "type": "...
+[2025-08-28 12:32:14] Save quiz request received
+[2025-08-28 12:32:14] Received data: {
+  "id": "810a76e9-643e-428e-ada3-ddfb28a58a8e",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:46:07] Save quiz request received
+[2025-08-28 12:46:07] Received data: {
+  "id": "a67c0601-d101-4c8c-bbda-b52824564f73",
+  "title": "asd",
+  "description": "",
+  "type": "...
+[2025-08-28 12:57:51] Save quiz request received
+[2025-08-28 12:57:51] Received data: {
+  "id": "eabc0fae-fd76-4c13-91a7-701170df0281",
+  "title": "xxx",
+  "description": "",
+  "type": "...
+[2025-08-28 15:28:19] Save quiz request received
+[2025-08-28 15:28:19] Received data: {
+  "id": "3699e595-1032-4381-812f-6bc4cb4ad119",
+  "title": "Alpha",
+  "description": "",
+  "type":...
+[2025-08-28 15:30:52] Save quiz request received
+[2025-08-28 15:30:52] Received data: {
+  "id": "3699e595-1032-4381-812f-6bc4cb4ad119",
+  "title": "Alphas",
+  "description": "",
+  "type"...
+[2025-08-28 15:48:18] Save quiz request received
+[2025-08-28 15:48:18] Received data: {
+  "id": "quiz_1756387852_Alphas",
+  "title": "Alphass",
+  "description": "",
+  "type": "practice",...
+[2025-08-28 15:50:04] Save quiz request received
+[2025-08-28 15:50:04] Received data: {
+  "id": "quiz_1756388898_Alphass",
+  "title": "Alphassx",
+  "description": "",
+  "type": "practice...
+[2025-08-28 15:59:16] Save quiz request received
+[2025-08-28 15:59:16] Received data: {
+  "id": "quiz_1756389004_Alphassx",
+  "title": "Alphassxx",
+  "description": "",
+  "type": "practi...
+[2025-08-28 16:03:03] Save quiz request received
+[2025-08-28 16:03:03] Received data: {
+  "id": "quiz_1756389556_Alphassxx",
+  "uuid": "quiz_1756389556_Alphassxx",
+  "title": "Alphassxxx...
+[2025-08-28 16:12:35] Save quiz request received
+[2025-08-28 16:12:35] Received data: {
+  "id": "957f0368-20ce-4b89-a04e-bbd6890c8576",
+  "title": "Wera",
+  "description": "",
+  "type": ...
+[2025-08-28 16:15:31] Save quiz request received
+[2025-08-28 16:15:31] Received data: {
+  "id": "quiz_1756390355_Wera",
+  "uuid": "quiz_1756390355_Wera",
+  "title": "Wera",
+  "descriptio...
+[2025-08-28 16:42:06] Save quiz request received
+[2025-08-28 16:42:06] Received data: {
+  "id": "8fd91746-38c4-4fec-b704-1d9f9274ec24",
+  "title": "asdxx",
+  "description": "",
+  "type":...
+[2025-08-28 16:50:50] Save quiz request received
+[2025-08-28 16:50:50] Received data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassx",
+  "...
+[2025-08-28 16:52:23] Save quiz request received
+[2025-08-28 16:52:23] Received data: {
+  "id": "quiz_1756392650_Alphassx",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxx",
+ ...
+[2025-08-28 16:55:39] Save quiz request received
+[2025-08-28 16:55:39] Received data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphasscx",
+  ...
+[2025-08-28 16:56:05] Save quiz request received
+[2025-08-28 16:56:05] Received data: {
+  "id": "5d2e97ba-313e-4114-ac9f-62c3585203d8",
+  "title": "x",
+  "description": "",
+  "type": "pr...
+[2025-08-28 16:57:18] Save quiz request received
+[2025-08-28 16:57:18] Received data: {
+  "id": "6071f4d2-7bf2-4054-8c69-276f5a8685c2",
+  "title": "x",
+  "description": "",
+  "type": "pr...
+[2025-08-28 16:57:50] Save quiz request received
+[2025-08-28 16:57:50] Received data: {
+  "id": "3a512351-97a3-4fe5-8e00-6936fcb755db",
+  "title": "xz",
+  "description": "",
+  "type": "p...
+[2025-08-28 17:02:55] Save quiz edit request received
+[2025-08-28 17:02:55] Error: Method not allowed
+[2025-08-28 17:03:04] Save quiz edit request received
+[2025-08-28 17:03:04] Error: Method not allowed
+[2025-08-28 17:03:14] Save quiz edit request received
+[2025-08-28 17:03:14] Error: Method not allowed
+[2025-08-28 17:04:12] Save quiz edit request received
+[2025-08-28 17:04:12] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:04:12] Error: Quiz not found
+[2025-08-28 17:04:45] Save quiz edit request received
+[2025-08-28 17:04:45] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:04:45] Error: Quiz not found
+[2025-08-28 17:06:13] Save quiz edit request received
+[2025-08-28 17:06:13] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:06:13] Error: Quiz not found
+[2025-08-28 17:07:51] Save quiz edit request received
+[2025-08-28 17:07:51] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:07:51] Searching for quiz with ID: quiz_1756393070_xz
+[2025-08-28 17:07:51] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:07:51] Checking file: quiz_1756374679_testing.json
+[2025-08-28 17:07:51] File ID: 1b487dc8-8cb1-4067-a7a4-95fa2709f4d0
+[2025-08-28 17:07:51] Checking file: quiz_1756388898_Alphass.json
+[2025-08-28 17:07:51] File ID: quiz_1756387852_Alphas
+[2025-08-28 17:07:51] Checking file: quiz_1756393070_xz.json
+[2025-08-28 17:07:51] File ID: 3a512351-97a3-4fe5-8e00-6936fcb755db
+[2025-08-28 17:07:51] No matching quiz file found
+[2025-08-28 17:07:51] Error: Quiz not found
+[2025-08-28 17:09:24] Save quiz edit request received
+[2025-08-28 17:09:24] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:09:24] Searching for quiz with ID: quiz_1756393070_xz
+[2025-08-28 17:09:24] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:09:24] Checking file: quiz_1756374679_testing.json
+[2025-08-28 17:09:24] File ID: 1b487dc8-8cb1-4067-a7a4-95fa2709f4d0
+[2025-08-28 17:09:24] Checking file: quiz_1756388898_Alphass.json
+[2025-08-28 17:09:24] File ID: quiz_1756387852_Alphas
+[2025-08-28 17:09:24] Checking file: quiz_1756393070_xz.json
+[2025-08-28 17:09:24] File ID: 3a512351-97a3-4fe5-8e00-6936fcb755db
+[2025-08-28 17:09:24] No matching quiz file found
+[2025-08-28 17:09:24] Error: Quiz not found
+[2025-08-28 17:09:47] Save quiz edit request received
+[2025-08-28 17:09:47] Error: Method not allowed
+[2025-08-28 17:11:25] Save quiz edit request received
+[2025-08-28 17:11:25] Initial data received:
+[2025-08-28 17:11:25] - Raw ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] - UUID: quiz_1756393070_xz
+[2025-08-28 17:11:25] ID Cleaning:
+[2025-08-28 17:11:25] - Original ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] - Cleaned ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] Received edit data: {
+  "id": "quiz_1756393070_xz",
+  "uuid": "quiz_1756393070_xz",
+  "title": "xzs",
+  "description": "...
+[2025-08-28 17:11:25] Searching for quiz with ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:11:25] Checking file: quiz_1756374679_testing.json
+[2025-08-28 17:11:25] File Contents:
+[2025-08-28 17:11:25] - File ID: 1b487dc8-8cb1-4067-a7a4-95fa2709f4d0
+[2025-08-28 17:11:25] - File UUID: not set
+[2025-08-28 17:11:25] - Comparing with requested ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] Checking file: quiz_1756388898_Alphass.json
+[2025-08-28 17:11:25] File Contents:
+[2025-08-28 17:11:25] - File ID: quiz_1756387852_Alphas
+[2025-08-28 17:11:25] - File UUID: not set
+[2025-08-28 17:11:25] - Comparing with requested ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] Checking file: quiz_1756393070_xz.json
+[2025-08-28 17:11:25] File Contents:
+[2025-08-28 17:11:25] - File ID: 3a512351-97a3-4fe5-8e00-6936fcb755db
+[2025-08-28 17:11:25] - File UUID: not set
+[2025-08-28 17:11:25] - Comparing with requested ID: quiz_1756393070_xz
+[2025-08-28 17:11:25] No matching quiz file found
+[2025-08-28 17:11:25] Error: Quiz not found
+[2025-08-28 17:12:41] Save quiz edit request received
+[2025-08-28 17:12:41] Initial data received:
+[2025-08-28 17:12:41] - Raw ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] - UUID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] ID Cleaning:
+[2025-08-28 17:12:41] - Original ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] - Cleaned ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassx",
+  "...
+[2025-08-28 17:12:41] Searching for quiz with ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:12:41] Checking file: quiz_1756374679_testing.json
+[2025-08-28 17:12:41] File Contents:
+[2025-08-28 17:12:41] - File ID: 1b487dc8-8cb1-4067-a7a4-95fa2709f4d0
+[2025-08-28 17:12:41] - File UUID: not set
+[2025-08-28 17:12:41] - Comparing with requested ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] Checking file: quiz_1756388898_Alphass.json
+[2025-08-28 17:12:41] File Contents:
+[2025-08-28 17:12:41] - File ID: quiz_1756387852_Alphas
+[2025-08-28 17:12:41] - File UUID: not set
+[2025-08-28 17:12:41] - Comparing with requested ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] Checking file: quiz_1756393070_xz.json
+[2025-08-28 17:12:41] File Contents:
+[2025-08-28 17:12:41] - File ID: 3a512351-97a3-4fe5-8e00-6936fcb755db
+[2025-08-28 17:12:41] - File UUID: not set
+[2025-08-28 17:12:41] - Comparing with requested ID: quiz_1756388898_Alphass
+[2025-08-28 17:12:41] No matching quiz file found
+[2025-08-28 17:12:41] Error: Quiz not found
+[2025-08-28 17:16:27] Save quiz edit request received
+[2025-08-28 17:16:27] Initial data received:
+[2025-08-28 17:16:27] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:27] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:16:27] Filepath ID Cleaning:
+[2025-08-28 17:16:27] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:27] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:27] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassx",
+  "...
+[2025-08-28 17:16:27] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:16:27] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:16:27] Found existing quiz file:
+[2025-08-28 17:16:27] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:27] - Quiz UUID: not set
+[2025-08-28 17:16:27] Quiz saved successfully
+[2025-08-28 17:16:38] Save quiz edit request received
+[2025-08-28 17:16:38] Initial data received:
+[2025-08-28 17:16:38] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] Filepath ID Cleaning:
+[2025-08-28 17:16:38] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxxx",
+ ...
+[2025-08-28 17:16:38] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:16:38] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:16:38] Found existing quiz file:
+[2025-08-28 17:16:38] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] - Quiz UUID: quiz_1756388898_Alphass
+[2025-08-28 17:16:38] Quiz saved successfully
+[2025-08-28 17:16:49] Save quiz edit request received
+[2025-08-28 17:16:49] Initial data received:
+[2025-08-28 17:16:49] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] Filepath ID Cleaning:
+[2025-08-28 17:16:49] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxxx",
+ ...
+[2025-08-28 17:16:49] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:16:49] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:16:49] Found existing quiz file:
+[2025-08-28 17:16:49] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] - Quiz UUID: quiz_1756388898_Alphass
+[2025-08-28 17:16:49] Quiz saved successfully
+[2025-08-28 17:19:05] Save quiz edit request received
+[2025-08-28 17:19:05] Initial data received:
+[2025-08-28 17:19:05] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] Filepath ID Cleaning:
+[2025-08-28 17:19:05] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxxx",
+ ...
+[2025-08-28 17:19:05] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:19:05] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:19:05] Found existing quiz file:
+[2025-08-28 17:19:05] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] - Quiz UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:05] Quiz saved successfully
+[2025-08-28 17:19:14] Save quiz edit request received
+[2025-08-28 17:19:14] Initial data received:
+[2025-08-28 17:19:14] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] Filepath ID Cleaning:
+[2025-08-28 17:19:14] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxxx",
+ ...
+[2025-08-28 17:19:14] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:19:14] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:19:14] Found existing quiz file:
+[2025-08-28 17:19:14] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] - Quiz UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:14] Quiz saved successfully
+[2025-08-28 17:19:25] Save quiz edit request received
+[2025-08-28 17:19:25] Initial data received:
+[2025-08-28 17:19:25] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] - Formatted UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] Filepath ID Cleaning:
+[2025-08-28 17:19:25] - Original filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] - Cleaned filepath: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] Received edit data: {
+  "id": "quiz_1756388898_Alphass",
+  "uuid": "quiz_1756388898_Alphass",
+  "title": "Alphassxxx",
+ ...
+[2025-08-28 17:19:25] Searching for quiz file: quiz_1756388898_Alphass.json
+[2025-08-28 17:19:25] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:19:25] Found existing quiz file:
+[2025-08-28 17:19:25] - Filepath ID: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] - Quiz UUID: quiz_1756388898_Alphass
+[2025-08-28 17:19:25] Quiz saved successfully
+[2025-08-28 17:50:32] Save quiz request received
+[2025-08-28 17:50:32] Received data: {
+  "id": "dbfe8aa0-a696-4f8d-b45d-9a1585f74dfc",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-08-28 17:50:49] Save quiz edit request received
+[2025-08-28 17:50:49] Initial data received:
+[2025-08-28 17:50:49] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:50:49] - Formatted UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:50:49] Filepath ID Cleaning:
+[2025-08-28 17:50:49] - Original filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:50:49] - Cleaned filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:50:49] Received edit data: {
+  "id": "quiz_1756396232_Untitled_Quiz",
+  "uuid": "quiz_1756396232_Untitled_Quiz",
+  "title": "Un...
+[2025-08-28 17:50:49] Searching for quiz file: quiz_1756396232_Untitled_Quiz.json
+[2025-08-28 17:50:49] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:50:49] Found existing quiz file:
+[2025-08-28 17:50:49] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:50:49] - Quiz UUID: not set
+[2025-08-28 17:50:49] Quiz saved successfully
+[2025-08-28 17:56:24] Save quiz edit request received
+[2025-08-28 17:56:24] Initial data received:
+[2025-08-28 17:56:24] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] - Formatted UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] Filepath ID Cleaning:
+[2025-08-28 17:56:24] - Original filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] - Cleaned filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] Received edit data: {
+  "id": "quiz_1756396232_Untitled_Quiz",
+  "uuid": "quiz_1756396232_Untitled_Quiz",
+  "title": "Un...
+[2025-08-28 17:56:24] Searching for quiz file: quiz_1756396232_Untitled_Quiz.json
+[2025-08-28 17:56:24] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:56:24] Found existing quiz file:
+[2025-08-28 17:56:24] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] - Quiz UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:24] Quiz saved successfully
+[2025-08-28 17:56:30] Save quiz edit request received
+[2025-08-28 17:56:30] Initial data received:
+[2025-08-28 17:56:30] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] - Formatted UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] Filepath ID Cleaning:
+[2025-08-28 17:56:30] - Original filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] - Cleaned filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] Received edit data: {
+  "id": "quiz_1756396232_Untitled_Quiz",
+  "uuid": "quiz_1756396232_Untitled_Quiz",
+  "title": "Un...
+[2025-08-28 17:56:30] Searching for quiz file: quiz_1756396232_Untitled_Quiz.json
+[2025-08-28 17:56:30] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:56:30] Found existing quiz file:
+[2025-08-28 17:56:30] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] - Quiz UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:30] Quiz saved successfully
+[2025-08-28 17:56:38] Save quiz edit request received
+[2025-08-28 17:56:38] Initial data received:
+[2025-08-28 17:56:38] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] - Formatted UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] Filepath ID Cleaning:
+[2025-08-28 17:56:38] - Original filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] - Cleaned filepath: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] Received edit data: {
+  "id": "quiz_1756396232_Untitled_Quiz",
+  "uuid": "quiz_1756396232_Untitled_Quiz",
+  "title": "Un...
+[2025-08-28 17:56:38] Searching for quiz file: quiz_1756396232_Untitled_Quiz.json
+[2025-08-28 17:56:38] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-08-28 17:56:38] Found existing quiz file:
+[2025-08-28 17:56:38] - Filepath ID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] - Quiz UUID: quiz_1756396232_Untitled_Quiz
+[2025-08-28 17:56:38] Quiz saved successfully
+[2025-08-28 18:11:10] Save quiz request received
+[2025-08-28 18:11:10] Received data: {
+  "id": "cfedd8ec-e17a-4f13-8c6a-b2c2fa62dd04",
+  "title": "Alpha Beta",
+  "description": "Testing...
+[2025-08-29 10:03:13] Save quiz request received
+[2025-08-29 10:03:13] Received data: {
+  "id": "5512f918-fb06-4096-9a8b-9dd1d7039326",
+  "title": "Testing?",
+  "description": "",
+  "typ...
+[2025-08-29 12:42:12] Save quiz request received
+[2025-08-29 12:42:12] Received data: {
+  "id": "55791933-abc9-42d5-85ef-74ffe54e0fa6",
+  "title": "test",
+  "description": "",
+  "type": ...
+[2025-08-29 13:18:57] Save quiz request received
+[2025-08-29 13:18:57] Received data: {
+  "id": "8bf127ed-e6a0-4309-a08d-419c5c61cf44",
+  "title": "test",
+  "description": "",
+  "type": ...
+[2025-09-02 11:34:36] Save quiz request received
+[2025-09-02 11:34:36] Received data: {
+  "id": "af85b31e-9ad0-42dc-bac4-c1ba69c27c7c",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-09-02 11:43:57] Save quiz edit request received
+[2025-09-02 11:43:57] Initial data received:
+[2025-09-02 11:43:57] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 11:43:57] - Formatted UUID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 11:43:57] Filepath ID Cleaning:
+[2025-09-02 11:43:57] - Original filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 11:43:57] - Cleaned filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 11:43:57] Received edit data: {
+  "id": "quiz_1756805676_Untitled_Quiz",
+  "uuid": "quiz_1756805676_Untitled_Quiz",
+  "title": "Un...
+[2025-09-02 11:43:57] Searching for quiz file: quiz_1756805676_Untitled_Quiz.json
+[2025-09-02 11:43:57] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-09-02 11:43:57] Found existing quiz file:
+[2025-09-02 11:43:57] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 11:43:57] - Quiz UUID: not set
+[2025-09-02 11:43:57] Quiz saved successfully
+[2025-09-02 13:18:21] Save quiz request received
+[2025-09-02 13:18:21] Received data: {
+  "id": "dce8d976-7af2-497d-8c28-f60d4530ea4c",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-09-02 15:14:20] Save quiz edit request received
+[2025-09-02 15:14:20] Initial data received:
+[2025-09-02 15:14:20] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] - Formatted UUID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] Filepath ID Cleaning:
+[2025-09-02 15:14:20] - Original filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] - Cleaned filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] Received edit data: {
+  "id": "quiz_1756805676_Untitled_Quiz",
+  "uuid": "quiz_1756805676_Untitled_Quiz",
+  "title": "Un...
+[2025-09-02 15:14:20] Searching for quiz file: quiz_1756805676_Untitled_Quiz.json
+[2025-09-02 15:14:20] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-09-02 15:14:20] Found existing quiz file:
+[2025-09-02 15:14:20] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] - Quiz UUID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:14:20] Quiz saved successfully
+[2025-09-02 15:23:54] Save quiz edit request received
+[2025-09-02 15:23:54] Initial data received:
+[2025-09-02 15:23:54] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] - Formatted UUID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] Filepath ID Cleaning:
+[2025-09-02 15:23:54] - Original filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] - Cleaned filepath: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] Received edit data: {
+  "id": "quiz_1756805676_Untitled_Quiz",
+  "uuid": "quiz_1756805676_Untitled_Quiz",
+  "title": "Un...
+[2025-09-02 15:23:54] Searching for quiz file: quiz_1756805676_Untitled_Quiz.json
+[2025-09-02 15:23:54] Looking in directory: C:\xampp_\htdocs/assessment-list/quizzes
+[2025-09-02 15:23:54] Found existing quiz file:
+[2025-09-02 15:23:54] - Filepath ID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] - Quiz UUID: quiz_1756805676_Untitled_Quiz
+[2025-09-02 15:23:54] Quiz saved successfully
+[2025-09-03 05:02:47] Save quiz request received
+[2025-09-03 05:02:47] Received data: {
+  "id": "12140498-482e-4070-ac32-c0f9a7a3f763",
+  "title": "Beta",
+  "description": "",
+  "type": ...
+[2025-09-04 05:12:10] Save quiz request received
+[2025-09-04 05:12:10] Received data: {
+  "id": "0456dda9-507d-44bb-b6e4-c452c9af8bb1",
+  "title": "Untitled Quiz",
+  "description": "",
+ ...
+[2025-09-04 06:14:12] Save quiz request received
+[2025-09-04 06:14:12] Received data: {
+  "id": "bf6ea3c6-b6f6-4895-a5a1-13feee7ca838",
+  "title": "Duplicate",
+  "description": "",
+  "ty...

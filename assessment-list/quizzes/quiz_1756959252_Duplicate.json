@@ -1,0 +1,270 @@
+{
+    "id": "bf6ea3c6-b6f6-4895-a5a1-13feee7ca838",
+    "title": "Duplicate",
+    "description": "",
+    "type": "practice",
+    "options": {
+        "timeLimit": 60,
+        "attempts": "3",
+        "showOneQuestion": false,
+        "shuffleQuestions": false,
+        "shuffleAnswers": false,
+        "seeResponses": false,
+        "seeResponsesTiming": "once",
+        "seeCorrectAnswers": false,
+        "showCorrectAnswersDate": "",
+        "showCorrectAnswersTime": "",
+        "hideCorrectAnswersDate": "",
+        "hideCorrectAnswersTime": "",
+        "dueDate": "",
+        "dueTime": "",
+        "availableFromDate": "",
+        "availableFromTime": "",
+        "availableUntilDate": "",
+        "availableUntilTime": ""
+    },
+    "questions": [
+        {
+            "id": "question_1",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "Which of the following is NOT a device that works by means of electromagnetism?",
+            "points": 1,
+            "choices": [
+                "electric motor",
+                "antenna",
+                "capacitor",
+                "solenoid"
+            ],
+            "correctAnswers": [
+                2
+            ],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_2",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "Which scientists contributed to the development of electromagnetic theory?",
+            "points": 1,
+            "choices": [
+                "Newton",
+                "Ampere",
+                "Faraday",
+                "Einstein",
+                "Maxwell"
+            ],
+            "correctAnswers": [
+                4,
+                2,
+                1
+            ],
+            "isMultipleAnswer": true,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_3",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "Which equation is not a Maxwell's equation?",
+            "points": 1,
+            "choices": [
+                " D = \u03c1",
+                "Div J = 0",
+                "curl E = 0",
+                "curl H = J"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_4",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "curl"
+                ]
+            ],
+            "blankText": "The _ measures the tendency of a vector to create rotation at a point.",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_5",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 2,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "divergence",
+                    "Gauss's",
+                    "Gauss"
+                ],
+                [
+                    "volume integral"
+                ]
+            ],
+            "blankText": "The _ theorem relates the net flux of a vector over a closed surface to the _ of the divergence of the vector throughout the volume bounded by the closed surface.",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_6",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "BJT differential amplifier",
+                    "differential amplifier"
+                ]
+            ],
+            "blankText": "The circuit given is a _ .<div><img src=\"https:\/\/ecstudiosystems.com\/discover\/textbooks\/basic-electronics\/amplifiers\/images\/differential-amplifier-circuit.jpg\"><\/div>",
+            "caseSensitive": [
+                true
+            ],
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_10",
+            "type": "formula",
+            "title": "",
+            "content": "Find the force on a [q] nC charge located in a region in which the electric field is [E] kV\/m.&nbsp; Express answer in uN.",
+            "points": 2,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "q*E",
+            "variables": {
+                "q": {
+                    "min": 5,
+                    "max": 250,
+                    "step": 5,
+                    "decimals": 0
+                },
+                "E": {
+                    "min": 100,
+                    "max": 500,
+                    "step": 50,
+                    "decimals": 0
+                }
+            },
+            "blanks": [],
+            "blankText": "",
+            "tolerance": "0",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_11",
+            "type": "formula",
+            "title": "",
+            "content": "Find the electric field in V\/m at a distance of [r] m due to a [q] nC charge.",
+            "points": 2,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "9*q\/r^2",
+            "variables": {
+                "q": {
+                    "min": 2,
+                    "max": 30,
+                    "step": 1,
+                    "decimals": 0
+                },
+                "r": {
+                    "min": 5,
+                    "max": 20,
+                    "step": 1,
+                    "decimals": 0
+                }
+            },
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_12",
+            "type": "formula",
+            "title": "",
+            "content": "Calculate the electric potential at [r] m from a [q] nC point charge. Express answer in volts (V).",
+            "points": 2,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "9*q\/r",
+            "variables": {
+                "q": {
+                    "min": 2,
+                    "max": 90,
+                    "step": 1,
+                    "decimals": 0
+                },
+                "r": {
+                    "min": 5,
+                    "max": 20,
+                    "step": 1,
+                    "decimals": 0
+                }
+            },
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        }
+    ],
+    "courseId": 1,
+    "createdAt": null,
+    "lastModified": "2025-09-04T04:14:12.333Z",
+    "is_published": 1
+}

@@ -1,0 +1,20 @@
+{
+    "sessionId": "session_68ba067cbd3047.80592880",
+    "userId": 3,
+    "quizId": "quiz_1756959252_Duplicate",
+    "attemptNumber": 2,
+    "startTime": "2025-09-05T05:37:00+08:00",
+    "status": "completed",
+    "answers": [],
+    "currentQuestion": 0,
+    "pageLoads": 1,
+    "visibilityChanges": 0,
+    "focusChanges": 0,
+    "suspiciousActivity": [],
+    "lastActivity": "2025-09-05T05:37:00+08:00",
+    "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Safari\/537.36",
+    "ipAddress": "::1",
+    "browserFingerprint": null,
+    "endTime": "2025-09-05T05:37:38+08:00",
+    "submitted": true
+}

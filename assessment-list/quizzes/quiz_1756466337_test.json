@@ -1,0 +1,31 @@
+{
+    "id": "8bf127ed-e6a0-4309-a08d-419c5c61cf44",
+    "title": "test",
+    "description": "",
+    "type": "practice",
+    "options": {
+        "timeLimit": 60,
+        "attempts": "1",
+        "showOneQuestion": false,
+        "shuffleQuestions": false,
+        "shuffleAnswers": false,
+        "seeResponses": false,
+        "seeResponsesTiming": "once",
+        "seeCorrectAnswers": false,
+        "showCorrectAnswersDate": "",
+        "showCorrectAnswersTime": "",
+        "hideCorrectAnswersDate": "",
+        "hideCorrectAnswersTime": "",
+        "dueDate": "",
+        "dueTime": "",
+        "availableFromDate": "",
+        "availableFromTime": "",
+        "availableUntilDate": "",
+        "availableUntilTime": ""
+    },
+    "questions": [],
+    "courseId": 1,
+    "createdAt": null,
+    "lastModified": "2025-08-29T11:18:57.285Z",
+    "is_published": 0
+}

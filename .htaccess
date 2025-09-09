@@ -1,0 +1,20 @@
+Options -MultiViews
+
+# Enable the rewrite engine
+RewriteEngine On
+
+# Rule to remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Rule to redirect requests with .php to URLs without .php (SEO-friendly)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Optional: Ensure the canonical URL without trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Set default index file
+DirectoryIndex landing.php
+

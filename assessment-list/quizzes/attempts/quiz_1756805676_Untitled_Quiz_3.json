@@ -1,0 +1,88 @@
+[
+    {
+        "attemptNumber": 1,
+        "submittedAt": "2025-09-04T06:04:53+02:00",
+        "timeUsed": 6,
+        "timeLimit": 60,
+        "isTimeout": false,
+        "startTime": "2025-09-04T04:04:47.104Z",
+        "answers": {
+            "q1": [
+                {
+                    "blankIndex": 1,
+                    "answer": "asd",
+                    "inputName": "q1_blank1"
+                },
+                {
+                    "blankIndex": 2,
+                    "answer": "asd",
+                    "inputName": "q1_blank2"
+                }
+            ],
+            "q2": 0,
+            "q3": 0
+        },
+        "score": 0,
+        "totalPoints": 3,
+        "correctQuestions": 0,
+        "totalQuestions": 3,
+        "percentage": 0,
+        "feedback": [
+            {
+                "question": 1,
+                "correct": false,
+                "points": 0,
+                "totalPoints": 1,
+                "feedback": "Partial or incorrect answer. Score: 0\/1"
+            },
+            {
+                "question": 2,
+                "correct": false,
+                "points": 0,
+                "totalPoints": 1,
+                "feedback": "Incorrect answer."
+            },
+            {
+                "question": 3,
+                "correct": false,
+                "points": 0,
+                "totalPoints": 1,
+                "feedback": "Incorrect answer."
+            }
+        ],
+        "questionResults": [
+            {
+                "questionNumber": 1,
+                "points": 1,
+                "studentAnswer": [
+                    {
+                        "blankIndex": 1,
+                        "answer": "asd",
+                        "inputName": "q1_blank1"
+                    },
+                    {
+                        "blankIndex": 2,
+                        "answer": "asd",
+                        "inputName": "q1_blank2"
+                    }
+                ],
+                "correct": false,
+                "score": 0
+            },
+            {
+                "questionNumber": 2,
+                "points": 1,
+                "studentAnswer": 0,
+                "correct": false,
+                "score": 0
+            },
+            {
+                "questionNumber": 3,
+                "points": 1,
+                "studentAnswer": 0,
+                "correct": false,
+                "score": 0
+            }
+        ]
+    }
+]

@@ -1,0 +1,113 @@
+{
+    "sessionId": "session_68b92815053607.63187232",
+    "userId": 3,
+    "quizId": "1756959252",
+    "attemptNumber": 1,
+    "startTime": "2025-09-04T13:48:05+08:00",
+    "status": "active",
+    "answers": [],
+    "currentQuestion": 0,
+    "pageLoads": 3,
+    "visibilityChanges": 1,
+    "focusChanges": 6,
+    "suspiciousActivity": [
+        {
+            "type": "page_loaded",
+            "timestamp": "2025-09-04T05:48:06.144Z",
+            "data": {
+                "loadTime": 1756964886144,
+                "referrer": "http:\/\/localhost\/access-student\/assessments"
+            },
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "tab_switch",
+            "timestamp": "2025-09-04T05:48:07.566Z",
+            "data": {
+                "switchCount": 1,
+                "timeAway": 0
+            },
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "page_loaded",
+            "timestamp": "2025-09-04T05:48:10.371Z",
+            "data": {
+                "loadTime": 1756964890371,
+                "referrer": "http:\/\/localhost\/access-student\/assessments"
+            },
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:48:16.143Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:48:18.899Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "page_loaded",
+            "timestamp": "2025-09-04T05:50:33.640Z",
+            "data": {
+                "loadTime": 1756965033640,
+                "referrer": "http:\/\/localhost\/access-student\/assessments"
+            },
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:50:36.036Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:50:37.591Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:50:39.003Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "prolonged_focus_loss",
+            "timestamp": "2025-09-04T05:52:29.061Z",
+            "data": {
+                "timeAway": 110058
+            },
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        },
+        {
+            "type": "focus_lost",
+            "timestamp": "2025-09-04T05:52:31.056Z",
+            "data": [],
+            "url": "http:\/\/localhost\/access-student\/take-quiz?id=quiz_1756959252_Duplicate",
+            "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Sa"
+        }
+    ],
+    "lastActivity": "2025-09-04T05:52:31.253Z",
+    "userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/139.0.0.0 Safari\/537.36",
+    "ipAddress": "::1",
+    "browserFingerprint": "eyJzY3JlZW4iOiIxNTM2eDg2NCIsInRpbWV6b25lIjoiQXNpYS9NYW5pbGEiLCJsYW5ndWFnZSI6ImVuLVVTIiwicGxhdGZvcm0iOiJXaW4zMiIsImNhbnZhcyI6ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBU3dBQUFDV0NBWUFBQUJrVzdYU0FBQUxxRWxFUVZSNEFleWFPNmcyVnhXR1B5MjlnR0FoV2lnS0ltaGhFUVVyTDJBanFJVW9hS05pcVdKam9ZVlkyS2lGQ0Y3UVZpc0xzVEdRSnBDRXBBZ2tLVklra0Nva1JVS0tRQ0JKbmF6bjUrekQvdWQ4bC9ubXVpOVAyT3VmbVgxZDYxbG52MmZQbkx6MzRIOFNrSUFFS2lHZ1lGV1NLTjJVZ0FRT0J3WExud0lKU0tBYUFzY0U2d1BoL2FOaDcyVDJyN2kvcGp3UW5WOE80eHFYcThvUzYxKzE0SVhPeEk3UjdWZnhUN3FQMjBtRk9YSzJzQ2JtTkJuelkrbDVxZXNETWRIVW5NUlFpd1QySnpBVUxBVG10WERyb2JEMzNOZ0g0L3FKc0pmQ1BobzJwandUblQ0ZXhqVXVvd3NiOThIb2ZXejk0Y2FPYnB1VUg4VXFXRnhtRldJamhtL0VMREJOZk9INlhOU05aUnRkTFJMb2swQXVXR3lvUHdXRzM0WDlNU3lWdCtMbW0yRXZodjB3ak1MbVlxTjlpNGNiNCtUQWhtUWVoQy85TnFjK1AxR2srM3pzelJTSHo4VE5wOEllRGt1RjlYOFpEOVRUSHJjSDFtQ3ROQmYzMU5HR3NmN2JjWlBhOFNFZUQ5UW52M2pHT00xZzNOUHZyM0ZEYkl6RlI5b3cydjRRYlRCZ3ZlL0ZQZjFnRWJmM0NuMW95MzI1MXhELy9DeU1Ba3RpNGg2alBtZExYZm9GZ1E4WWZsQ1BNVGRyVUk5eFR4MXRHREVlaTUyMjNKaVQ4ZmljMTNzdmdXSUo1SUtGR0h3b1BQMTMyTEN3d1JDem4wWkR2a0hqOFdKQi9OSnBnaXZ6UHhhakhna2JsbGVpZ2szMGk3am1oWk5hT3JHeE9ZZW5NSVRqN3pjRDhPOS9jZi85TU5iN1dGenhtdzBhdHhmTFQ2TEhkOElZKy8rNHBrSWN2NDRIL1A5cVhKOElvM3lCZjhMd2k5TVRuT0FWVmJjbHRYRnlITGJ4ekh6TW53WjhNVzZTRDZ6NXQzZ21MdVpaSW5aWS9DZm14UGQ4M2FpeU5FR2cwU0J5d1dKanZ4Rnh2aGwyckNBbWJHTDZIV3NmVThkdmN6Ym5ENkl6R3pVdTk1Vlg0NG1OK3QyNElsd1lwd1ZPRFZGMXIzenQzcitIUXhJb0h0blVuNDhiK25FQzRzU1NCSkU1T2JIazRoTmRUNWFub3VXRnNFdUZlVG5kZlBhbVl4TDhwMitlOHd1dmdKK01pdWZEeHBUL1JpZEVPaTRIVHB1Sit4S3hJNGF3KzNKTW50YUlXNHNFeWllUUM5YmEzaUltdjQxRmZoN0daby9MMGNJbWVuKzBzRW0vSGRmM2hTRUNpQU1uREFUaUsxR0hzQ0pvR0dMNjZhaWowTTZKNjVnZzByNmtJU3ljcXZBTElYODJKajhYV3pUUEtzUTJKL1lQeCtyL0NFdk00dFlpZ1hvSTVJTEZwdWVWa05QQXNRallrRk4vMEhtZDRUV043Mk5qVHpyNFFGK0VpN1U1b2FRVEJxK1UrRWxiTWtRT3NXUGNWb2FRd296VEZhZENCT3pZMm9ncnB6NEU1MWo3TlhWelkrZVhBT0xQOTdocjFyV3ZCSFlua0FzV3IwRzhFdkpLbFJ6ald3Y2ZuSGxtUS9LRFB1VUV3ZVpndy9JcXdseW5qRmRHMXVERWt2ZkpOenl2VllnWGdwWDNTZmUwOHdvNG5DTzFYNzZPN3dFTFRsVS9qaUdzaVlERjdaM0NhWS92VitrME51d0FZMnhZUDN3bXRqbXh2eDRUOG92cEwzRWxuK1EzYmkwU3FJTkFMbGhzS3Y0YXgyc2J3a0VFbkhDNGNyTGkyeFBmaW5oT0FzSVBQYytjb1Bpd3pmM1FtSXV4cDc1YjVmMzVvTTJHSEFvYkp5dnFhZWZiRk9LSENLYXhiRHhlQS9HRFB2UmxETzBJRnlLSUgyeFdZdms2RFdHOHBxWVk0bkZTNFZURmF5N3JJMkNuSmtreDhkRWNuMUkvaEFvZkVKRlVkK282Si9aOFRrNmluSGJUeC95OHpYc0pGRXNnRnl5YzVBZjVJM0hEU1lDTmphVVRGMytsZXpMYUVJVWtibXcwK2xELysyZ2JGcjQvTVJkamsxalFIME5BaHYzWjhKK0xTazRyOUVtR2tGSlBPMnNqZm9oZ2FtZmpmU25HMFk3eDRaNi9ndEdPdUNJbS9EV01Oc1FGc2FPTnYrajlPY2FOTFh3QUoyYm1nd1BqT0ZYeHYwb2dYRHlmTXZ6R1o4YmlFK3RqeEFwejJKOGFtK3FaWTJyc2FZNTBSVUNId3AvYXZFcWdTQUpEd2NKSk5nVWJLMzBieXEvOEQ1UjhUNklmRzR6dlJyU3o2ZjRabFl4alBHMkkxT00zZGZRWkdnSVN6WGNLNDVrbjc4OHo5YWt6d3NPYXFRLzMxS1YyMWsrKzBRZS9VeHVuUnVvdzV2MU5OS1IyZktJdVg0czJMTG9kMHJ6RDlkajRDQmQ5TGhsenNYYXljK3N4RjJ2Q2tpdlB4TW42YVR6MzFOR0cwZTlZN05Ubjh4QWphK01QNHpvMXc2Nkp3REhCT3VjL3IxYjg0Si9yMDFzYi95OFRwNlpjTkhwallMd1MySVRBdFlLMWlWT1ZMTUozS0FTYzE5SDBiYThTMTNWVEFuVVNVTENtNXkyOVVnMWZ5YWJQNkVnSlNPQXNnWm1DZFhadUd5VWdBUWtzU2tEQldoU25rMGxBQW1zU1VMRFdwT3ZjRXBEQW9nUVVyRVZ4TmoyWndVbGdkd0lLMXU0cDBBRUpTR0FzQVFWckxDbjdTVUFDdXhOUXNIWlBnUTVJb0R3Q3BYcWtZSldhR2YyU2dBVHVFRkN3N2lDeFFnSVNLSldBZ2xWcVp2UkxBaEs0UTBEQnVvTmtmb1V6U0VBQzZ4QlFzTmJoNnF3U2tNQUtCQlNzRmFBNnBRUWtzQTRCQldzZHJzN2FDd0hqM0pTQWdyVXBiaGVUZ0FUbUVGQ3c1dEJ6ckFRa3NDa0JCV3RUM0M0bUFRbk1JYkN2WU0zeDNMRVNrRUIzQkJTczdsSnV3QktvbDRDQ1ZXL3U5RndDM1JGUXNMcEwrVjRCdTY0RTVoTlFzT1l6ZEFZSlNHQWpBZ3JXUnFCZFJnSVNtRTlBd1pyUDBCa2tJSUg3Q2F6MnBHQ3RodGFKSlNDQnBRa29XRXNUZFQ0SlNHQTFBZ3JXYW1pZFdBSVNXSnFBZ3JVMDBmbnpPWU1FSkhDQ2dJSjFBb3pWRXBCQWVRUVVyUEp5b2tjU2tNQUpBZ3JXQ1RCV1MyQUxBcTV4SFFFRjZ6cGU5cGFBQkhZa29HRHRDTitsSlNDQjZ3Z29XTmZ4c3JjRUpMQWpnYW9GYTBkdUxpMEJDZXhBUU1IYUFicExTa0FDMHdnb1dOTzRPVW9DRXRpQmdJSzFBM1NYbkVEQUlSSUlBZ3BXUUxCSVFBSjFFRkN3NnNpVFhrcEFBa0ZBd1FvSUZnbElvQ1FDcDMxUnNFNnpzVVVDRWlpTWdJSlZXRUowUndJU09FMUF3VHJOeGhZSlNLQXdBZ3BXWVFtWjc0NHpTS0JkQWdwV3U3azFNZ2swUjBEQmFpNmxCaVNCZGdrb1dPM20xc2phSjlCZGhBcFdkeWszWUFuVVMwREJxamQzZWk2QjdnZ29XTjJsM0lBbFVDK0JuZ1dyM3F6cHVRUTZKYUJnZFpwNHc1WkFqUVFVckJxenBzOFM2SlNBZ3RWcDRuc0wyM2piSUtCZ3RaRkhvNUJBRndRVXJDN1NiSkFTYUlPQWd0VkdIbzFDQWwwUUdDVllYWkF3U0FsSW9IZ0NDbGJ4S2RKQkNVZ2dFVkN3RWdtdkVwQkE4UVFVck9KVHRMR0RMaWVCZ2drb1dBVW5SOWNrSUlIN0NTaFk5L1B3U1FJU0tKaUFnbFZ3Y25STkF1c1NxRzkyQmF1K25PbXhCTG9sb0dCMW0zb0RsMEI5QkJTcytuS214eExvbG9DQ05UbjFEcFNBQkxZbW9HQnRUZHoxSkNDQnlRUVVyTW5vSENnQkNXeE5RTUhhbXJqcjFVaEFud3Nob0dBVmtnamRrSUFFTGhOUXNDNHpzb2NFSkZBSUFRV3JrRVRvaGdRa2NKbkFGb0oxMlF0N1NFQUNFaGhCUU1FYUFja3VFcEJBR1FRVXJETHlvQmNTa01BSUFncldDRWgyR1UvQW5oSllrNENDdFNaZDU1YUFCQllsb0dBdGl0UEpKQ0NCTlFrb1dHdlNkVzRKdEV4Z2g5Z1VyQjJndTZRRUpEQ05nSUkxalp1akpDQ0JIUWdvV0R0QWQwa0pTR0FhQVFWckdyZjVvNXhCQWhLNG1vQ0NkVFV5QjBoQUFuc1JVTEQySXUrNkVwREExUVFVckt1Uk9VQUMxeEt3LzFJRUZLeWxTRHFQQkNTd09nRUZhM1hFTGlBQkNTeEZRTUZhaXFUelNFQUNxeE9vUUxCV1orQUNFcEJBSlFRVXJFb1NwWnNTa01EaG9HRDVVeUFCQ1ZSRFFNR3FKbFZkT0dxUUVqaExRTUU2aThkR0NVaWdKQUlLVmtuWjBCY0pTT0FzQVFYckxCNGJKU0NCdFFoTW1WZkJta0xOTVJLUXdDNEVGS3hkc0x1b0JDUXdoWUNDTllXYVl5UWdnVjBJS0ZpN1lKKy9xRE5Jb0VjQ0NsYVBXVGRtQ1ZSS1FNR3FOSEc2TFlFZUNTaFlQV2JkbU9zaW9MZTNCQlNzV3hUZVNFQUNwUk5Rc0VyUGtQNUpRQUszQkJTc1d4VGVTRUFDcFJOb1g3Qkt6NEQrU1VBQ293a29XS05SMlZFQ0V0aWJnSUsxZHdaY1h3SVNHRTFBd1JxTnlvN2xFOUREMWdrb1dLMW4yUGdrMEJBQkJhdWhaQnFLQkZvbm9HQzFubUhqazBCREJETEJhaWdxUTVHQUJKb2tvR0ExbVZhRGtrQ2JCQlNzTnZOcVZCSm9rb0NDMVdSYUx3WmxCd2xVU1VEQnFqSnRPaTJCUGdrb1dIM20zYWdsVUNVQkJhdkt0T20wQk1ZVGFLbW5ndFZTTm8xRkFvMFRVTEFhVDdEaFNhQWxBZ3BXUzlrMEZnazBUa0RCdXBCZ215VWdnWElJS0ZqbDVFSlBKQ0NCQ3dRVXJBdUFiSmFBQk1vaG9HQ1Zrd3M5Mlp1QTZ4ZFBRTUVxUGtVNktBRUpKQUlLVmlMaFZRSVNLSjZBZ2xWOGluUlFBaEpJQk40RkFBRC8veWN3eGVJQUFBQUdTVVJCVkFNQUF2bFBQUDd3eFBjQUFBQUFTVVZPUks1Q1lJST0iLCJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTM5LjAuMC4wIFNhIn0=",
+    "securityWarnings": 0,
+    "isSecurityBreach": false,
+    "lastSecurityEvent": "2025-09-04T07:52:31+02:00"
+}

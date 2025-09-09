@@ -1,0 +1,93 @@
+{
+    "id": "12140498-482e-4070-ac32-c0f9a7a3f763",
+    "title": "Beta",
+    "description": "",
+    "type": "practice",
+    "options": {
+        "timeLimit": 10,
+        "attempts": "1",
+        "showOneQuestion": true,
+        "shuffleQuestions": false,
+        "shuffleAnswers": false,
+        "seeResponses": false,
+        "seeResponsesTiming": "once",
+        "seeCorrectAnswers": false,
+        "showCorrectAnswersDate": "",
+        "showCorrectAnswersTime": "",
+        "hideCorrectAnswersDate": "",
+        "hideCorrectAnswersTime": "",
+        "dueDate": "",
+        "dueTime": "",
+        "availableFromDate": "",
+        "availableFromTime": "",
+        "availableUntilDate": "",
+        "availableUntilTime": ""
+    },
+    "questions": [
+        {
+            "id": "question_1",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "What is dog",
+            "points": 1,
+            "choices": [
+                "animal",
+                "plant",
+                "object",
+                "NA"
+            ],
+            "correctAnswers": [
+                0
+            ],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": "3",
+            "ilo_number": "2",
+            "ilo_description": "123"
+        },
+        {
+            "id": "question_2",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "boys",
+                    "boy"
+                ],
+                [
+                    "girls",
+                    "girl"
+                ],
+                [
+                    "selling"
+                ],
+                [
+                    "Lanterns"
+                ]
+            ],
+            "blankText": "Whenever I see _ and _ selling _ on the _streets",
+            "ilo_id": "8",
+            "ilo_number": "3",
+            "ilo_description": "Test, testing - working",
+            "caseSensitive": [
+                [
+                    true
+                ]
+            ]
+        }
+    ],
+    "courseId": 1,
+    "createdAt": null,
+    "lastModified": "2025-09-03T03:02:47.931Z",
+    "is_published": 1
+}

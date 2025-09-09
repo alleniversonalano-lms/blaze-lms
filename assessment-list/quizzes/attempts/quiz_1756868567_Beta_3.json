@@ -1,0 +1,93 @@
+[
+    {
+        "attemptNumber": 1,
+        "submittedAt": "2025-09-04T06:04:33+02:00",
+        "timeUsed": 6,
+        "timeLimit": 10,
+        "isTimeout": false,
+        "startTime": "2025-09-04T04:04:26.638Z",
+        "answers": {
+            "q1": 0,
+            "q2": [
+                {
+                    "blankIndex": 1,
+                    "answer": "asd",
+                    "inputName": "q2_blank1"
+                },
+                {
+                    "blankIndex": 2,
+                    "answer": "asd",
+                    "inputName": "q2_blank2"
+                },
+                {
+                    "blankIndex": 3,
+                    "answer": "asd",
+                    "inputName": "q2_blank3"
+                },
+                {
+                    "blankIndex": 4,
+                    "answer": "asd",
+                    "inputName": "q2_blank4"
+                }
+            ]
+        },
+        "score": 1,
+        "totalPoints": 2,
+        "correctQuestions": 1,
+        "totalQuestions": 2,
+        "percentage": 50,
+        "feedback": [
+            {
+                "question": 1,
+                "correct": true,
+                "points": 1,
+                "totalPoints": 1,
+                "feedback": "Correct!"
+            },
+            {
+                "question": 2,
+                "correct": false,
+                "points": 0,
+                "totalPoints": 1,
+                "feedback": "Partial or incorrect answer. Score: 0\/1"
+            }
+        ],
+        "questionResults": [
+            {
+                "questionNumber": 1,
+                "points": 1,
+                "studentAnswer": 0,
+                "correct": true,
+                "score": 1
+            },
+            {
+                "questionNumber": 2,
+                "points": 1,
+                "studentAnswer": [
+                    {
+                        "blankIndex": 1,
+                        "answer": "asd",
+                        "inputName": "q2_blank1"
+                    },
+                    {
+                        "blankIndex": 2,
+                        "answer": "asd",
+                        "inputName": "q2_blank2"
+                    },
+                    {
+                        "blankIndex": 3,
+                        "answer": "asd",
+                        "inputName": "q2_blank3"
+                    },
+                    {
+                        "blankIndex": 4,
+                        "answer": "asd",
+                        "inputName": "q2_blank4"
+                    }
+                ],
+                "correct": false,
+                "score": 0
+            }
+        ]
+    }
+]

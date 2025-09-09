@@ -1,0 +1,119 @@
+{
+    "id": "quiz_1756805676_Untitled_Quiz",
+    "uuid": "quiz_1756805676_Untitled_Quiz",
+    "title": "Untitled Quiz",
+    "description": "",
+    "type": "practice",
+    "options": {
+        "timeLimit": 60,
+        "attempts": "1",
+        "showOneQuestion": false,
+        "shuffleQuestions": false,
+        "shuffleAnswers": false,
+        "seeResponses": false,
+        "seeResponsesTiming": "once",
+        "seeCorrectAnswers": false,
+        "showCorrectAnswersDate": "",
+        "showCorrectAnswersTime": "",
+        "hideCorrectAnswersDate": "",
+        "hideCorrectAnswersTime": "",
+        "dueDate": "",
+        "dueTime": "",
+        "availableFromDate": "",
+        "availableFromTime": "",
+        "availableUntilDate": "",
+        "availableUntilTime": ""
+    },
+    "questions": [
+        {
+            "id": "question_1",
+            "type": "fill_blank",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [],
+            "correctAnswers": [],
+            "isMultipleAnswer": null,
+            "formula": "",
+            "variables": [],
+            "blanks": [
+                [
+                    "Happy",
+                    "hape"
+                ],
+                [
+                    "when",
+                    "When"
+                ]
+            ],
+            "blankText": "Check if _ this would be _",
+            "caseSensitive": [
+                [
+                    true,
+                    true
+                ],
+                [
+                    null,
+                    true
+                ]
+            ],
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        },
+        {
+            "id": "question_1",
+            "type": "multiple_choice",
+            "title": "asd",
+            "content": "",
+            "points": 1,
+            "choices": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correctAnswers": [],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": "3",
+            "ilo_number": "2",
+            "ilo_description": "123",
+            "savedDate": "2025-09-02T11:38:53.040Z",
+            "courseId": "1",
+            "savedBy": {
+                "userId": "1",
+                "name": "Allen Alano"
+            }
+        },
+        {
+            "id": "question_2",
+            "type": "multiple_choice",
+            "title": "",
+            "content": "",
+            "points": 1,
+            "choices": [
+                "x^2",
+                "",
+                "",
+                ""
+            ],
+            "correctAnswers": [],
+            "isMultipleAnswer": false,
+            "formula": "",
+            "variables": [],
+            "blanks": [],
+            "blankText": "",
+            "ilo_id": null,
+            "ilo_number": null,
+            "ilo_description": null
+        }
+    ],
+    "courseId": 1,
+    "createdAt": null,
+    "lastModified": "2025-09-02 15:23:54",
+    "is_published": 1
+}

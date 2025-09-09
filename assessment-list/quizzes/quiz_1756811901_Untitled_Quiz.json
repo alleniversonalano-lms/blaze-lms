@@ -1,0 +1,54 @@
+{
+  "id": "dce8d976-7af2-497d-8c28-f60d4530ea4c",
+  "title": "Untitled Quiz",
+  "description": "",
+  "type": "practice",
+  "options": {
+    "timeLimit": 60,
+    "attempts": "1",
+    "showOneQuestion": false,
+    "shuffleQuestions": false,
+    "shuffleAnswers": false,
+    "seeResponses": false,
+    "seeResponsesTiming": "once",
+    "seeCorrectAnswers": false,
+    "showCorrectAnswersDate": "",
+    "showCorrectAnswersTime": "",
+    "hideCorrectAnswersDate": "",
+    "hideCorrectAnswersTime": "",
+    "dueDate": "",
+    "dueTime": "",
+    "availableFromDate": "",
+    "availableFromTime": "",
+    "availableUntilDate": "",
+    "availableUntilTime": ""
+  },
+  "questions": [
+    {
+      "id": "question_1",
+      "type": "multiple_choice",
+      "title": "",
+      "content": "",
+      "points": 1,
+      "choices": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswers": [],
+      "isMultipleAnswer": false,
+      "formula": "",
+      "variables": {},
+      "blanks": [],
+      "blankText": "",
+      "ilo_id": null,
+      "ilo_number": null,
+      "ilo_description": null
+    }
+  ],
+  "courseId": 1,
+  "createdAt": null,
+  "lastModified": "2025-09-02T11:18:21.455Z",
+  "is_published": 0
+}
